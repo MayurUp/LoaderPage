@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js">
+   <head>
+      <meta charset="utf-8">
+      <title>Freya by WeddingAsia</title>
+      <meta name="description" content="The description should optimally be between 150-160 characters.">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="WeddingAsia">
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body>
+      <div id="slideshow"></div>
+      <div id="bg">
+         <canvas></canvas>
+         <canvas></canvas>
+         <canvas></canvas>
+      </div>
+      <div id="loading">
+         <div class="loading-bar"></div>
+         <span>Celebrating 11 years..<br/>&amp;<br/><h3>Presents</h3></span>
+      </div>
+      <img src="img/Logo.png" style="height:50px; min-width:250px;" class="brand-logo" alt="WeddingAsia Logo" title="Asia's most premium wedding Exhibition" />
+      <div id="full-wrapper">
+         <div id="fullpage">
+            <div class="section active" id="section0">
+               <div class="inside-section">
+                  <div class="inside-content">
+                     <h1 class="cd-headline zoom"> Freya<br>Coming Soon..</h1>
+                     <div class="text">
+                        <p>Watch out this space for more<br> <strong>Time to launch: <span id="getting-started"></span></strong></p>
+                        <div id="subscribe">
+                           <form action="php/notify-me-2.php" id="notifyMe" method="POST">
+                              <div class="form-group">
+                                 <div class="controls">
+                                    <input type="text" id="mail-sub" name="email" placeholder="Click here to type your email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Click here to type your email'" class="form-control email srequiredField" /> <button id="submit-form" class="btn btn-lg submit"><i class="fa fa-plus"></i></button>
+                                    <div class="clear"></div>
+                                 </div>
+                              </div>
+                           </form>
+                           <p class="spam-news"><i class="fa fa-lock"></i> We promise you not to spam. Your email will stay secret.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="ibtn light-btn" href="#2"> <span class="icon"> <span class="arrow"><span></span><span></span></span> <span class="arrow"><span></span><span></span></span> <span class="arrow"><span></span><span></span></span> </span>More Info </a>
+            </div>
+            <div class="section" id="section1">
+               <div class="inside-section">
+                  <div class="inside-content container">
+                     <div class="row">
+                        <div class="col-xs-12 col-md-12 col-lg-12 with-border">
+                           <h2>What is Freya<small>Grand Opening in <span id="getting-started-2"></span></small></h2>
+                           <div class="text">
+                              <p class="subtitle"> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.<br><br><strong>Separated they live in Bookmarksgrove</strong> right at the coast of the Semantics, a large language ocean.</p>
+                              <br>
+                              <ul>
+                                 <li><i class="fa fa-check"></i> Free access to the Grand Opening</li>
+                                 <li><i class="fa fa-check"></i> Save up to 60% on the real price</li>
+                                 <li><i class="fa fa-check"></i> Never miss an update again</li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <a class="ibtn light-btn hidden-sc" href="#3">Contact us!</a>
+            </div>
+            <div class="section" id="section2">
+               <div class="inside-section">
+                  <span class="icon-background"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></span>
+                  <div class="inside-content container">
+                     <h2>Say Hello!<small>Team available from Monday to Saturday</small></h2>
+                     <div class="text">
+                        <form id="contact-form" name="contact-form" method="POST" data-name="Contact Form">
+                           <div class="row">
+                              <div class="col-xs-12 col-sm-12 col-lg-12 display-none">
+                                 <div class="form-group"> <input type="text" id="checking" class="form form-control" placeholder="Leave this field empty" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Leave this field empty'" name="checking" data-name="Checking"></div>
+                              </div>
+                              <div class="col-xs-12 col-sm-12 col-lg-12">
+                                 <div class="form-group"> <i class="fa fa-user icon-fields"></i> <input type="text" id="name" class="form form-control" placeholder="Name*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Name*'" name="name" data-name="Name" required></div>
+                              </div>
+                              <div class="col-xs-12 col-sm-12 col-lg-12">
+                                 <div class="form-group"> <i class="fa fa-envelope icon-fields"></i> <input type="email" id="email" class="form form-control" placeholder="Email Address*" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address*'" name="email-address" data-name="Email Address" required></div>
+                              </div>
+                              <div class="col-xs-12 col-sm-12 col-lg-12">
+                                 <div class="form-group form-group-select">
+                                    <i class="fa fa-commenting icon-fields"></i> 
+                                    <select id="reason" class="form form-control no-selection" name="reason" data-name="reason" onchange="selectedfield()">
+                                       <option value="placeholder" disabled selected>Regarding...*</option>
+                                       <option value="Enterprise Sales">Enterprise Sales</option>
+                                       <option value="Customer Support and Billing">Customer Support &amp; Billing</option>
+                                       <option value="Recruiting">Recruiting</option>
+                                       <option value="Just saying Hi!">Just saying Hi!</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="col-xs-12 col-sm-12 col-lg-12">
+                                 <div class="form-group"> <i class="fa fa-pencil icon-fields"></i><textarea id="text-area" class="form textarea form-control" placeholder="Your message here*... 20 characters Min." onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your message here*... 20 characters Min.'" name="message" data-name="Text Area" required></textarea></div>
+                                 <span class="sub-text">* Required fields</span>
+                              </div>
+                           </div>
+                           <button type="submit" id="valid-form" class="btn btn-color">Send my Message</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <a class="ibtn light-btn hidden-sc" href="#1">Subscribe</a>
+            </div>
+            <div class="seperator-wrapper">
+               <div class="seperator gradient"></div>
+               <div class="seperator gradient"></div>
+               <div class="seperator gradient"></div>
+               <div class="seperator gradient"></div>
+            </div>
+            <div class="social-nav">
+               <ul>
+                  <li> <a href="https://www.facebook.com/weddingasiaindia/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                  <li> <a href="https://twitter.com/weddingasia_" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li> <a href="https://www.instagram.com/wedding_asia/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div id="block-answer" class="">
+         <div id="answer"></div>
+      </div>
+      <div class="block-message">
+         <div class="message">
+            <p class="notify-valid"></p>
+         </div>
+      </div>
+      <div class="copyright">
+         <p><strong><a href="https://weddingasia.in" target="_blank">WeddingAsia</a> </strong><br> &copy; 2017 | Copyright</p>
+      </div>
+      <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous">
+	  </script> <script src="js/jquery.easing.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+	  <script src="js/jquery.fullpage.js"></script>
+	  <script src="js/vegas.js"></script> 
+	  <script src="js/contact-me.js"></script> 
+	  <script src="js/notifyMe.js"></script> 
+	  <script src="js/jquery.countdown.js"></script> 
+	  <script src="js/space.js"></script> 
+	  <script src="js/main.js"></script> 
+   </body>
+</html>
